@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main()
+{
+    int month = 3;  
+    
+    switch (month)
+    {
+        case 1:
+            std::cout<<"January"<<std::endl;
+            break;
+        case 2:
+            std::cout<<"February"<<std::endl;
+            break;
+        case 3:
+            std::cout<<"March"<<std::endl;
+            break;
+        default:
+            std::cout<<"Error!"<<std::endl;
+    }
+
+    return 0;
+}
