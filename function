@@ -1,0 +1,19 @@
+#include <iostream>
+
+void showMessage()
+{
+    std::cout<<"Hello!"<<std::endl;
+}
+
+void displayNum(int num)
+{
+    std::cout<<"The value is "<< num << std::endl;
+}
+
+
+int main()
+{
+    showMessage();
+    displayNum(5);
+    return 0;
+}
