@@ -1,6 +1,6 @@
 #include <iostream>
 //void is universal to not return a declared variable 
-//if returning a variable the function most be declare that variable in the heading
+//if returning a variable the function most declare that variable in the heading
 //main() returns an integer. the heading declares: int main()
 
 void showMessage()
