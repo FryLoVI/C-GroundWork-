@@ -11,9 +11,9 @@ asin(x) 	       Returns the arcsine of x
 atan(x) 	       Returns the arctangent of x
 cbrt(x) 	       Returns the cube root of x
 ceil(x) 	       Returns the value of x rounded up to its nearest integer
-cos(x) 	           Returns the cosine of x
+cos(x) 	               Returns the cosine of x
 cosh(x) 	       Returns the hyperbolic cosine of x
-exp(x) 	           Returns the value of Ex
+exp(x) 	               Returns the value of Ex
 expm1(x) 	       Returns ex -1
 fabs(x) 	       Returns the absolute value of a floating x
 fdim(x, y)         Returns the positive difference between x and y
