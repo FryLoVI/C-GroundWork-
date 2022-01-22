@@ -5,7 +5,7 @@
 
 /*
 <cmath>
-abs(x) 	              Returns the absolute value of x
+abs(x) 	               Returns the absolute value of x
 acos(x) 	       Returns the arccosine of x
 asin(x) 	       Returns the arcsine of x
 atan(x) 	       Returns the arctangent of x
