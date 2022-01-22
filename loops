@@ -1,0 +1,37 @@
+#include <iostream>
+
+/*
+
+== 	Equal to 	x == y 	
+!= 	Not equal 	x != y 	
+> 	Greater than 	x > y 	
+< 	Less than 	x < y 	
+>= 	Greater than or equal to 	x >= y 	
+<= 	Less than or equal to 	x <= y
+++ 	Increment 	   Increases the value of a variable by 1 	++x 	
+-- 	Decrement 	   Decreases the value of a variable by 1 	  --x
+
+*/
+
+int main()
+{
+    int n = 1;
+//------------------------------------------ while
+    while (n == 1)
+    {
+        std::cout << "Hello" << std::endl;
+        n++; // add 1
+             // n--; // subtract 1
+    }
+//------------------------------------------  do while
+    do
+    {
+    std::cout << "Bye!" << std::endl;
+    } while (n == 3);
+//------------------------------------------ for
+    int count;
+    for (count = 1; count <= 5; count++)
+    {
+        std::cout<<"AGAIN!"<<std::endl;
+    }
+}
