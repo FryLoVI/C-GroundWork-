@@ -1,0 +1,70 @@
+#include <iostream>
+
+// Bubble sort, selection sort, insertion sort
+//Last function is the swap function
+
+void bubbleSort(int array[], int size)
+{
+    int maxElement;
+    int index; 
+    for(maxElement = size - 1; maxElement >= 0; maxElement --)
+    {
+        for(index = 0; index <= maxElement - 1; index++)
+        {
+            if(array[index] > array[index+1])
+            {
+                std::swap(array[index], array[index -1]);
+            }
+        }
+    }
+
+}
+void selectionSort(int array[], int size)
+{
+    int startScan, index, minIndex, minValue;
+    for(startScan = 0; startScan < (size-1); startScan++)
+    {
+        minIndex = startScan;
+        minValue = array[startScan];
+        for(index = startScan + 1; index < size; index++)
+        {
+            if(array[index] < minValue)
+            {
+                minValue = array[index];
+                minIndex = index;
+            }
+        }
+        std::swap(array[minIndex], array[startScan]);
+    }
+}
+
+void insertionSort(int array[], int size)
+{
+    int unsortedValue, scan;
+
+    for(int index =1; index < size; index ++)
+    {
+        unsortedValue = array[index];
+        scan = index;
+        while(scan > 0 && array[scan- 1] > unsortedValue)
+        {
+            array[scan] = array[scan-1];
+            scan--;
+        }
+        array[scan] = unsortedValue;
+    }
+}
+
+void swap(int &a, int &b)
+{
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+
+int main()
+{
+    return 0;
+}
