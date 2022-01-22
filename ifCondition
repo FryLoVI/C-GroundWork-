@@ -1,0 +1,29 @@
+#include <iostream>
+
+/*
+
+== 	Equal to 	x == y 	
+!= 	Not equal 	x != y 	
+> 	Greater than 	x > y 	
+< 	Less than 	x < y 	
+>= 	Greater than or equal to 	x >= y 	
+<= 	Less than or equal to 	x <= y
+
+*/
+// change the 1 to == 1 to output text
+
+int main ()
+{
+    if (1 == 2)
+    {
+        std::cout<<"Hello!";
+    }
+    else if (1 == 3)
+    {
+        std::cout<<"Bye!";
+    }
+    else 
+    {
+        std::cout<<"Oh!";
+    }
+}
