@@ -1,0 +1,41 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main()
+{
+
+//--------------------------------------Data TO Text [OPEN::Deletes Previous]
+ofstream outputFile;
+outputFile.open("journal.txt");
+outputFile << "Hello everyone!" << endl;
+outputFile.close();
+
+//--------------------------------------Appending Data [OPEN::Keeps Previous]
+fstream addFile;
+addFile.open("journal.txt", ios::app);
+addFile << "Yo yo!" << endl;
+addFile.close();
+
+//--------------------------------------Output Reading [Word By Word Strucure Output]
+ifstream myFile;
+int number;
+std::string nameA;
+myFile.open("journal.txt");
+while (myFile >> nameA)
+{
+    cout << nameA << endl;
+}
+myFile.close();
+//--------------------------------------Ouput Reading [Line By Line Structure Output]
+/*
+std::getline(myFile, nameA);
+std::cout << nameA;
+myFile.close();
+*/
+
+return 0;
+
+}
+
